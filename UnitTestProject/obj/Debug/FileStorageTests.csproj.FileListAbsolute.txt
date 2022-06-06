@@ -1,0 +1,15 @@
+C:\Users\roman\Downloads\UnitTestforfile\UnitTestProject\bin\Debug\UnitTestProject.dll
+C:\Users\roman\Downloads\UnitTestforfile\UnitTestProject\bin\Debug\UnitTestProject.pdb
+C:\Users\roman\Downloads\UnitTestforfile\UnitTestProject\bin\Debug\FileStorage.dll
+C:\Users\roman\Downloads\UnitTestforfile\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\roman\Downloads\UnitTestforfile\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\roman\Downloads\UnitTestforfile\UnitTestProject\bin\Debug\nunit.framework.dll
+C:\Users\roman\Downloads\UnitTestforfile\UnitTestProject\bin\Debug\FileStorage.pdb
+C:\Users\roman\Downloads\UnitTestforfile\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\roman\Downloads\UnitTestforfile\UnitTestProject\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\roman\Downloads\UnitTestforfile\UnitTestProject\bin\Debug\nunit.framework.xml
+C:\Users\roman\Downloads\UnitTestforfile\UnitTestProject\obj\Debug\FileStorageTests.csproj.AssemblyReference.cache
+C:\Users\roman\Downloads\UnitTestforfile\UnitTestProject\obj\Debug\FileStorageTests.csproj.CoreCompileInputs.cache
+C:\Users\roman\Downloads\UnitTestforfile\UnitTestProject\obj\Debug\FileStorageTests.csproj.CopyComplete
+C:\Users\roman\Downloads\UnitTestforfile\UnitTestProject\obj\Debug\UnitTestProject.dll
+C:\Users\roman\Downloads\UnitTestforfile\UnitTestProject\obj\Debug\UnitTestProject.pdb
