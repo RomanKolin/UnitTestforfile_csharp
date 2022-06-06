@@ -32,8 +32,13 @@ namespace UnitTestProject
         /* Тестируем получение размера */
         [TestMethod]
         [Test, TestCaseSource(nameof(FilesData))]
-        public void GetSizeTest(File newFile, String name, String content)
+        public void GetSizeTest()
         {
+            String name = "";
+            String content = "";
+
+            File newFile = new File("", "");
+
             lenght = content.Length / 2;
 
             Assert.AreEqual(newFile.GetSize(), lenght, SIZE_EXCEPTION);
@@ -42,8 +47,13 @@ namespace UnitTestProject
         /* Тестируем получение имени */
         [TestMethod]
         [Test, TestCaseSource(nameof(FilesData))]
-        public void GetFilenameTest(File newFile, String name, String content)
+        public void GetFilenameTest()
         {
+            String name = "";
+            String content = "";
+
+            File newFile = new File("", "");
+            
             Assert.AreEqual(newFile.GetFilename(), name, NAME_EXCEPTION);
         }
 

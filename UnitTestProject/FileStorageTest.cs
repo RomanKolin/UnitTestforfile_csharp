@@ -65,8 +65,10 @@ namespace UnitTestProject
         /* Тестирование записи файла */
         [TestMethod]
         [Test, TestCaseSource(nameof(NewFilesData))]
-        public void WriteTest(File file) 
+        public void WriteTest() 
         {
+            File file = new File("", "");
+            
             Assert.True(storage.Write(file));
             storage.DeleteAllFiles();
         }
@@ -74,8 +76,10 @@ namespace UnitTestProject
         /* Тестирование записи дублирующегося файла */
         [TestMethod]
         [Test, TestCaseSource(nameof(NewExceptionFileData))]
-        public void WriteExceptionTest(File file) 
+        public void WriteExceptionTest() 
         {
+            File file = new File("", "");
+
             bool isException = false;
             try
             {
@@ -93,9 +97,13 @@ namespace UnitTestProject
         /* Тестирование проверки существования файла */
         [TestMethod]
         [Test, TestCaseSource(nameof(NewFilesData))]
-        public void IsExistsTest(File file) 
+        public void IsExistsTest() 
         {
-            String name = file.GetFilename();
+            String name;
+
+            File file = new File("", "");
+
+            name = file.GetFilename();
             Assert.False(storage.IsExists(name));
             try
             {
@@ -111,8 +119,12 @@ namespace UnitTestProject
         /* Тестирование удаления файла */
         [TestMethod]
         [Test, TestCaseSource(nameof(FilesForDeleteData))]
-        public void DeleteTest(File file, String fileName) 
+        public void DeleteTest() 
         {
+            String fileName = "";
+
+            File file = new File("", "");
+
             storage.Write(file);
             Assert.True(storage.Delete(fileName));
         }
@@ -132,13 +144,14 @@ namespace UnitTestProject
         /* Тестирование получения файла */
         [TestMethod]
         [Test, TestCaseSource(nameof(NewFilesData))]
-        public void GetFileTest(File expectedFile) 
+        public void GetFileTest() 
         {
+            File expectedFile = new File("", "");
+
             storage.Write(expectedFile);
 
             File actualfile = storage.GetFile(expectedFile.GetFilename());
             bool difference = actualfile.GetFilename().Equals(expectedFile.GetFilename()) && actualfile.GetSize().Equals(expectedFile.GetSize());
-
             Assert.IsFalse(difference, string.Format("There is some differences in {0} or {1}", expectedFile.GetFilename(), expectedFile.GetSize()));
         }
     }
